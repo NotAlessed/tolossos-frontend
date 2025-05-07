@@ -1,59 +1,12 @@
-@import url(/css/base.css);
-@import url(/css/layout.css);
-@import url(/css/navbar.css);
+@import '/css/base.css';
 
-body {
-    background-color: var(--mischka);
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: var(--spindle);
+.logo-h1 {
     text-align: center;
-}
-
-.text-container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--snuff);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align:justify;
-}
-
-.warning-h1 {
-    font-family: 'Ubuntu';
-}
-
-.warning-p {
-    font-family: 'Roboto', 'Ubuntu';
-    font-size: 1rem;
-    line-height: 1.6;
-    color: var(--shuttlegray);
-}
-
-.warning-signature {
-    font-family: 'Josefin Sans', 'Ubuntu';
-    font-size: 1.2rem;
-    color: var(--shuttlegray);
-}
-
-.info-container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: var(--spindle);
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align:justify;
-}
-
-.info-h4 {
-    font-family: 'Ubuntu';
-    font-size: 1rem;
-    color: var(--shuttlegray);
 }
