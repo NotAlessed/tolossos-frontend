@@ -5,16 +5,31 @@
 body {
     background-color: var(--hummingbird);
     font-family: 'Roboto', sans-serif;
+    color: var(--shuttlegray);
 }
-@import '/css/base.css';
+
+header {
+    background-color: var(--cerulean);
+    height: 25px auto;
+    margin: auto;
+}
+
 
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height:auto;
 }
 
 .logo-h1 {
+    color: var(--shuttlegray);
     text-align: center;
+    margin: 15px;
+}
+
+footer {
+    background-color: var(--amethyst);
+    height: auto;
+    padding: 10% auto;
 }
