@@ -1,31 +1,33 @@
-.header {
-  background-color: var(--cerulean);
-  padding: 1rem 2rem;
+/* Usamos la fuente Poppins y colores del sistema Panorámica */
+body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
-  color: var(--westar);
-  display: flex;
-  align-items: center;
 }
 
+/* Navbar en línea siempre */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--cerulean); /* fondo del header */
+  color: var(--westar); /* texto claro */
+}
+
+/* Logo a la izquierda */
 .logo {
   font-weight: 700;
   font-size: 1.6rem;
-  letter-spacing: 1.2px;
-  cursor: default;
+  letter-spacing: 1px;
 }
 
-.navbar {
-  background-color: var(--cerulean);
-  padding: 0.5rem 2rem;
-  font-family: 'Poppins', sans-serif;
-  color: var(--westar);
-}
-
+/* Enlaces alineados horizontalmente */
 .nav-links {
   display: flex;
-  gap: 1.8rem;
+  gap: 2rem;
 }
 
+/* Estilo de los enlaces */
 .nav-links a {
   color: var(--westar);
   text-decoration: none;
@@ -36,9 +38,10 @@
 }
 
 .nav-links a:hover {
-  color: var(--aquamarine);
+  color: var(--aquamarine); /* color de acento al pasar */
 }
 
+/* Línea sutil al pasar el mouse */
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -52,18 +55,4 @@
 
 .nav-links a:hover::after {
   width: 100%;
-}
-
-@media (max-width: 760px) {
-  .navbar {
-    padding: 1rem 2rem;
-  }
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-    gap: 1rem;
-  }
-  .nav-links a {
-    font-size: 1.1rem;
-  }
 }
